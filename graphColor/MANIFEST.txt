@@ -1,0 +1,13 @@
+[main]
+
+problem = gc
+
+files =
+    graphColor.cpp
+    Report.txt
+
+build =
+    g++ graphColor.cpp -o graphColor
+
+run =
+    ./graphColor %%f

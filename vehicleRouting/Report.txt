@@ -1,0 +1,14 @@
+-A greedy solution is used to optimize Vehicle Routing Problem.
+In this approach, customers except warehouse are marked after routed.
+For current location of a vehicle, a customer having the minimum distance, and was not used before is selected
+as candidate customer. These candidate customers are added to the route and marked.
+If there is a violation of capacity, and algorithm does not select a customer, vehicle returns the warehouse(This especially causes uneffective results)
+and a new vehicle begins to route. This approach is repeated until all customers are marked, and are used by a vehicle. However,
+in a few of test cases, some customers may remain as unvisited since the number of vehicles may be insufficient. Therefore, this greedy approach
+does not guarantee a feasible solution.
+
+
+All relevant parameters and their settings:
+This approach only takes a file name as parameters. This input file contains n+1 lines.
+First line, 3 number (1 -> the number of customers, 2-> the number of vehicles, 3-> vehicle capacity)
+Other n lines, demand and x-y coordinates of customers.

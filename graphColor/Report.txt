@@ -1,0 +1,17 @@
+-A heuristic sequential technique is used for graph coloring.
+In this heuristic technique, after a node is colored, the color of this node does not change.
+In order to provide better strategy, picking the next node to be colored is carefully done.
+Degree based ordering technique is used to order nodes as selection criteria.
+Specifically, Largest Degree Ordering(LDO) is applied to order nodes[1]. However, when there are two nodes having the same degree,
+the node which has the higher number as the sum of the degrees of neighboring nodes than other same degreed node is selected.
+After ordering was completed, all nodes are scanned, and sequentially colored.
+
+
+All relevant parameters and their settings:
+This approach only takes a file name as parameters. This input file contains e+1 lines.
+First line, 2 number (1 -> the number of nodes, 2-> the number of edges)
+Other e lines, edges between nodes.
+
+References:
+[1] D.J.A. Welsh and M.B. Powell. An upper bound for the chromatic number of a graph and its application to timetabling problems.
+Computer Journal, (10):85–86, 1967.

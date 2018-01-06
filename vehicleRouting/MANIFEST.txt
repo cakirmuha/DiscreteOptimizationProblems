@@ -1,0 +1,13 @@
+[main]
+
+problem = vrp
+
+files =
+    vehicleRouting.cpp
+    Report.txt
+
+build =
+    g++ vehicleRouting.cpp -o vehicleRouting
+
+run =
+    ./vehicleRouting %%f

@@ -1,0 +1,19 @@
+-Branch and bound technique is used to solve 0/1 Knapsack problem.
+-In this technique, it is determined whether a node is promising in the state space tree by computing a bound
+and children of a promising node which has the best bound to reach quickly an optimal solution with Breadth-first-search is visited.
+If bound is not better than the best solution, then node is not promising.
+-In this approach, Best-first-search strategy as improved version of Breadth-first-search is used, and it expands the node with best bound first.
+Best-first-search actually uses the same strategy as Breadth-first-search, but it uses priority queue to prioritize the most promising objects[1].
+Let v as cumulative value of items already selected in the subset,
+	w as cumulative weight of items already selected in the subset
+	valuePerWeight[i+1] as best of remaining items
+Then, Upper bound is calculated as v + (Capacity -w)* valuePerWeight[i+1]
+
+
+All relevant parameters and their settings:
+This approach only takes a file name as parameters. This input file contains n+1 lines.
+First line, 2 number (1 -> the number of items, 2-> capacity of knapsack)
+Other n lines, value and weight of each items.
+
+References:
+[1] Levitin, Anany. The Design and Analysis of Algorithms. New Jersey: Pearson Education Inc., 2003.

@@ -1,0 +1,13 @@
+[main]
+
+problem = ks
+
+files =
+    knapsack.cpp
+    Report.txt
+
+build =
+    g++ knapsack.cpp -o knapsack
+
+run =
+    ./knapsack %%f
